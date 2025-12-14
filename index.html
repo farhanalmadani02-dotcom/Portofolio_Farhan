@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Player - Console</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Arial", sans-serif;
+            background: radial-gradient(circle at top, #0a0f24, #050914 70%);
+        }
+
+        .welcome-section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .welcome-box {
+            padding: 50px 70px;
+            background: rgba(15, 20, 35, 0.45);
+            border: 2px solid #2dd4bf;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 0 30px rgba(45, 212, 191, 0.4);
+        }
+
+        .welcome-title {
+            font-size: 3rem;
+            color: #e2e8f0;
+            margin-bottom: 30px;
+            letter-spacing: 3px;
+            text-shadow: 0 0 12px #2dd4bf;
+            font-weight: bold;
+        }
+
+        .console-btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            background: #22c55e;
+            color: #e2e8f0;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px #22c55e;
+            margin-right: 10px;
+        }
+
+        .press-start {
+            color: #a9b8c9;
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        .blinking {
+            animation: blink 1s infinite;
+        }
+
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.2; }
+            100% { opacity: 1; }
+        }
+
+        .welcome-btn {
+            background: #2dd4bf;
+            color: #0f172a;
+            font-weight: bold;
+            padding: 14px 36px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: 0.2s;
+        }
+
+        .welcome-btn:hover {
+            background: #14b8a6;
+            transform: scale(1.08);
+            box-shadow: 0 0 15px #14b8a6;
+        }
+    </style>
+</head>
+<body>
+
+<section class="welcome-section">
+    <div class="welcome-box">
+
+        <h1 class="welcome-title">WELCOME PLAYER</h1>
+
+        <div class="press-start blinking">
+            <span class=></span> Press Start
+        </div>
+
+        <button class="welcome-btn" onclick="mulaiPortfolio()">Start Game</button>
+
+    </div>
+</section>
+
+<script>
+function mulaiPortfolio() {
+    window.location.href = "home.html"; // halaman portofolio kamu
+}
+</script>
+
+</body>
+</html>
